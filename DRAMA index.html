@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BRODRAMA GOLD - 100 Drama China</title>
+<style>
+body{background:#000;color:#fff;font-family:Arial,sans-serif;margin:0;padding:15px}
+h1{color:#FFD700;text-align:center;font-size:22px;line-height:1.3;animation:glow 2s infinite}
+.search{width:100%;box-sizing:border-box;padding:14px;border-radius:12px;border:2px solid #FFD700;background:#111;color:#fff;margin:15px 0;font-size:16px;outline:none}
+.card{background:#151515;border:1px solid #333;border-radius:12px;padding:14px;margin:10px 0;display:flex;justify-content:space-between;align-items:center}
+.card b{font-size:14px;color:#fff}
+.card a{background:#FFD700;color:#000;padding:8px 16px;border-radius:8px;text-decoration:none;font-weight:bold;font-size:12px;white-space:nowrap;animation:kedip 1.5s infinite;box-shadow:0 0 8px #FFD700}
+.badge{font-size:10px;background:#222;color:#FFD700;padding:3px 6px;border-radius:4px;margin-left:6px}
+#count{text-align:center;color:#888;font-size:13px;margin-bottom:10px}
+@keyframes kedip{0%{opacity:1;box-shadow:0 0 8px #FFD700}50%{opacity:0.75;box-shadow:0 0 18px #FFD700,0 0 28px #FFD700}100%{opacity:1;box-shadow:0 0 8px #FFD700}}
+@keyframes glow{0%,100%{text-shadow:0 0 5px #FFD700}50%{text-shadow:0 0 15px #FFD700,0 0 25px #FFA500}}
+</style>
+</head>
+<body>
+<h1>👑 BRODRAMA GOLD<br>100 Drama China Sub Indo</h1>
+<div id="count">Memuat 100 judul...</div>
+<input id="q" class="search" placeholder="Cari judul... misal: CEO, Balas Dendam">
+<div id="list"></div>
+<script>
+const dramas=["CEO Dingin Jatuh Cinta Padaku","Balas Dendam Istri Yang Dikhianati","Nikah Kontrak Dengan Miliarder","Perselingkuhan Suami CEO","Cinderella Bertemu Pangeran CEO","Istri Miskin Ternyata Anak Konglomerat","Dikhianati Kembali Sebagai Ratu","CEO Amnesia Jatuh Cinta Padaku","Mantan Suami Menyesal Setelah Cerai","Rahasia Anak CEO Tersembunyi","Pernikahan Paksa Dengan CEO Kejam","CEO 30 Tahun Belum Menikah Terpikat Aku","Ibu Mertua Jahat vs Menantu Sultan","Selingkuh Dengan Sekretaris CEO","Cinta Segitiga CEO dan Bodyguard","Direktur Dingin Ternyata Suamiku","Setelah Cerai Aku Jadi Miliarder","Mertua Sombong Terkejut Menantunya Kaya","Anakku Ternyata Anak CEO","Istri Kontrak CEO Tampan","CEO Jatuh Cinta Pada Cleaning Service","Balas Dendam Mantan Istri CEO","Menikahi CEO Lumpuh Ternyata Sembuh","CEO Posesif Jatuh Cinta Padaku","Cinta Terlarang Dengan CEO","CEO Menyamar Jadi Supir","Istri CEO Yang Disembunyikan","Pangeran CEO dan Gadis Desa","Kisah Cinta CEO dan Dokter Cantik","CEO Galak Jadi Bucin","Dibuang Suami Dipungut CEO","Anak Hilang CEO Ditemukan","CEO Muda dan Janda Cantik","Perjodohan Dengan CEO Dingin","CEO Ternyata Ayah Kandung Anakku","Gadis Miskin Menikahi CEO Tua","CEO Jatuh Cinta Pandangan Pertama","Rahasia Pernikahan CEO","Menantu Miskin Ternyata CEO","CEO Mencari Cinta Sejati","Cinta CEO di Musim Dingin","Gadis Lugu dan CEO Playboy","Setelah 7 Tahun Berpisah Bertemu CEO","CEO Membalas Dendam Untuk Istrinya","Istri Kedua CEO","CEO Kehilangan Ingatan","Mencintai Musuh CEO","Jatuh Cinta Pada Bos Sendiri","CEO Dan Pengasuh Anak","Cinta Pertama CEO","CEO Kaya Jatuh Cinta Gadis Desa","Istri CEO Dihianati Sahabat","CEO Buta Jatuh Cinta Padaku","Pernikahan Rahasia CEO","CEO Kembar Tertukar Cinta","Cinta CEO dan Mahasiswa Miskin","Balas Dendam CEO Pada Keluarga Istri","CEO Menikahi Gadis Yang Menyelamatkannya","Menantu CEO Yang Diremehkan","CEO Menceraikan Istri Miskin","Gadis Cantik dan CEO Dingin","CEO Menyesal Setelah Mengusir Istri","Istri CEO Yang Selalu Disalahkan","Cinta CEO Dan Sekretaris Cantik","CEO Mencari Anak Yang Hilang","Pernikahan CEO Karena Hutang","CEO Jatuh Cinta Pada Mantan Istri","Gadis Miskin Jadi Istri CEO Kaya","CEO Dan Cinta Pertamanya Kembali","CEO Terpikat Gadis Penjual Bunga","Menikahi CEO Demi Ibu","CEO Dingin Luluh Oleh Gadis Ceria","Rahasia CEO Yang Miskin","Istri CEO Yang Kabur","CEO Dan Bayi Ajaib","Cinta CEO Di Balik Dendam","Pria Miskin Ternyata CEO","Wanita Hamil Ditolong CEO","CEO Jatuh Cinta Pada Saingannya","CEO Dan Gadis Pembersih Cinta","CEO Mencintai Istri Orang","Kisah Cinta CEO Dengan Pramugari","CEO Dan Mantan Pacar Kembali","CEO Terkejut Istri Hamil","Cinta Terlarang CEO Dan Karyawati","CEO Dan Gadis Yang Membencinya","Menikahi CEO Karena Paksaan Keluarga","CEO Menjadi Ayah Dadakan","Cinta CEO Di Kantor","CEO Dan Cinta Yang Hilang","CEO Dan Gadis Buta","CEO Menyelamatkan Gadis Miskin","Cinta CEO Dan Dokter Muda","CEO Dan Gadis Yang Mirip Mantannya","CEO Jatuh Cinta Setelah Diselamatkan","Balas Dendam Gadis Miskin Pada CEO","CEO Dan Pernikahan Kilat","CEO Dan Gadis Penjual Kue","Cinta CEO Yang Tersembunyi","CEO Menikahi Gadis Desa Demi Warisan"];
+const listEl=document.getElementById('list');const countEl=document.getElementById('count');const qEl=document.getElementById('q');
+function render(arr){let h='';arr.forEach((title)=>{const idx=dramas.indexOf(title)+1;const query=encodeURIComponent(title+' sub indo full');h+=`<div class="card"><div><b>${idx}. ${title}</b><span class="badge">SUB INDO</span></div><a href="https://m.youtube.com/results?search_query=${query}" target="_blank">NONTON</a></div>`;});listEl.innerHTML=h;countEl.textContent=`Menampilkan ${arr.length} dari 100 judul`;}
+function filter(){const q=qEl.value.toLowerCase();if(!q){render(dramas);return;}render(dramas.filter(t=>t.toLowerCase().includes(q)));}qEl.addEventListener('input',filter);render(dramas);
+</script>
+<!-- === BANNER BAWAH BISA DI CLOSE === -->
+<div id="ad-banner-bottom" style="position:fixed;bottom:0;left:0;right:0;z-index:99999;background:#111;padding:8px 10px;text-align:center;border-top:2px solid #FFD700;">
+  
+  <div style="display:flex;justify-content:space-between;align-items:center;">
+    <div style="font-size:9px;color:#888;">IKLAN • SCORPION SCAN SUPPORT</div>
+    <span onclick="document.getElementById('ad-banner-bottom').style.display='none'" style="background:#333;color:#fff;padding:2px 8px;border-radius:10px;font-size:12px;cursor:pointer;">✕ CLOSE</span>
+  </div>
+
+  <!-- TEMPAT IKLAN BAUVAL -->
+  <div id="bauval-slot" style="margin-top:6px;">
+    <script data-cfasync="false" src="https://bauval.org/14/1c35c6a9..."></script>
+  </div>
+
+  <!-- PROMO LU SENDIRI -->
+  <a href="https://lynk.id/xtradevr/l2vvxm69po0n/apps/6a7ae264-ded6-4c04-b..." style="text-decoration:none;display:block;margin-top:6px;">
+    <div style="background:linear-gradient(90deg,#FFD700,#FFA500);color:#000;font-weight:bold;padding:6px;border-radius:6px;font-size:13px;">
+      🔥 BY 1GET2 PROMO UNTUK MINGGU INI 🔥
+    </div>
+  </a>
+
+</div>
+</script>
+</body>
+</html>
